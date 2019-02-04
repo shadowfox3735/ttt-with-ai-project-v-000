@@ -7,7 +7,7 @@ def start
     puts "Please select number of players."
     play_mode = gets.strip
     if play_mode == "2"
-      newgame = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
+      newgame = Game.new
   elsif play_mode == "1"
       newgame = Game.new(player_1 = Players::Human.new("X"), player_2 = Players::Computer.new("O"), board = Board.new)
   elsif play_mode == "0"
